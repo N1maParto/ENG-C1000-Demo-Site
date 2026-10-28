@@ -21,3 +21,7 @@ The bag is in memory and resets on refresh. Checkout, inventory, newsletter deli
 In the repository, open Settings → Pages → Build and deployment and select **GitHub Actions** as the source. Open Actions → Deploy website to GitHub Pages → Run workflow (branch: main). Subsequent pushes to main deploy automatically. After the workflow succeeds, the site is available at https://n1maparto.github.io/ENG-C1000-Demo-Site/ . The deployment job also shows the published URL.
 
 If Actions is disabled, enable it in Settings → Actions → General (repository or organization policy may require an administrator). If Pages is unavailable for a private repository on your plan, use an eligible plan or change visibility only if you intend to make the code public.
+
+## Banner photography
+
+Home and About use [Scenic View of Mountains, Pexels photo 13559896](https://www.pexels.com/photo/scenic-view-of-mountains-13559896/). The shared `bannerPhoto` configuration and `naturePhoto()` renderer in `src/main.js` control the source and credits; `.nature-photo` in `src/style.css` controls responsive framing. The image loads directly from `images.pexels.com`, so visitors need access to that domain. It is not bundled locally: the cloud network blocked downloading it during implementation. Both pages use the same photograph, with solid dark panels for readable text.

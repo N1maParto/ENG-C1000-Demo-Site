@@ -23,3 +23,33 @@ input::placeholder{color:var(--muted);opacity:1}
  .catalog-grid .product-title{flex-wrap:nowrap}
  .scene-caption{max-width:145px;text-align:right;line-height:1.5}
 }
+
+/* Shared photo banners. Portrait framing keeps the moon and lit peaks in view. */
+.nature-photo{position:relative;margin:0;min-width:0;overflow:hidden;background:var(--surface-raised);isolation:isolate}
+.nature-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.nature-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 65%,#101f19e8);pointer-events:none}
+.nature-photo figcaption{position:absolute;inset:auto 28px 24px;z-index:1;display:flex;justify-content:space-between;align-items:end;gap:20px;color:var(--text);font-size:12px;line-height:1.6}
+.nature-photo figcaption span{letter-spacing:1.5px;font-weight:600}
+.nature-photo figcaption a{text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.about-hero{display:grid;grid-template-columns:1fr 1fr;text-align:left;padding:0;min-height:650px}
+.about-hero-copy{padding:70px 12%}
+.about-hero h1{font-size:clamp(39px,4vw,64px)}
+.about-hero-copy>p{font-size:16px;line-height:1.7;max-width:460px}
+.about-art{justify-content:flex-start;gap:24px;padding:25px 0 0}
+.about-art b{font-size:72px;line-height:1}
+@media(max-width:900px){
+ .nature-photo figcaption{inset:auto 20px 20px;flex-direction:column;align-items:start;gap:7px}
+ .about-hero{min-height:580px}
+ .about-hero-copy{padding:50px 10%}
+ .about-art{gap:15px}
+ .about-art span{letter-spacing:1px}
+}
+@media(max-width:600px){
+ .hero>.nature-photo{height:480px}
+ .about-hero{grid-template-columns:1fr}
+ .about-hero-copy{padding:45px 6% 35px}
+ .about-hero .nature-photo{height:480px}
+ .nature-photo img{object-position:50% 40%}
+ .nature-photo figcaption{flex-direction:row;align-items:end;gap:16px}
+ .nature-photo figcaption span{max-width:150px}
+}
