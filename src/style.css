@@ -24,13 +24,13 @@ input::placeholder{color:var(--muted);opacity:1}
  .scene-caption{max-width:145px;text-align:right;line-height:1.5}
 }
 
-/* Shared storefront banners; the focal point is the WorkFuel sign. */
-.banner-photo{position:relative;margin:0;min-width:0;overflow:hidden;background:var(--surface-raised);isolation:isolate}
-.banner-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 50%}
-
-
-
-
+/* Shared photo banners. Portrait framing keeps the moon and lit peaks in view. */
+.nature-photo{position:relative;margin:0;min-width:0;overflow:hidden;background:var(--surface-raised);isolation:isolate}
+.nature-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.nature-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 65%,#101f19e8);pointer-events:none}
+.nature-photo figcaption{position:absolute;inset:auto 28px 24px;z-index:1;display:flex;justify-content:space-between;align-items:end;gap:20px;color:var(--text);font-size:12px;line-height:1.6}
+.nature-photo figcaption span{letter-spacing:1.5px;font-weight:600}
+.nature-photo figcaption a{text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
 .about-hero{display:grid;grid-template-columns:1fr 1fr;text-align:left;padding:0;min-height:650px}
 .about-hero-copy{padding:70px 12%}
 .about-hero h1{font-size:clamp(39px,4vw,64px)}
@@ -38,20 +38,20 @@ input::placeholder{color:var(--muted);opacity:1}
 .about-art{justify-content:flex-start;gap:24px;padding:25px 0 0}
 .about-art b{font-size:72px;line-height:1}
 @media(max-width:900px){
-
+ .nature-photo figcaption{inset:auto 20px 20px;flex-direction:column;align-items:start;gap:7px}
  .about-hero{min-height:580px}
  .about-hero-copy{padding:50px 10%}
  .about-art{gap:15px}
  .about-art span{letter-spacing:1px}
 }
 @media(max-width:600px){
- .hero>.banner-photo{height:480px}
+ .hero>.nature-photo{height:480px}
  .about-hero{grid-template-columns:1fr}
  .about-hero-copy{padding:45px 6% 35px}
- .about-hero .banner-photo{height:480px}
-
-
-
+ .about-hero .nature-photo{height:480px}
+ .nature-photo img{object-position:50% 40%}
+ .nature-photo figcaption{flex-direction:row;align-items:end;gap:16px}
+ .nature-photo figcaption span{max-width:150px}
 }
 
 /* WorkFuel: charcoal metal, warm sign light, and grounded green surfaces. */
@@ -82,7 +82,7 @@ h1,h2{text-transform:uppercase}
 .newsletter{border-top:3px solid var(--accent);background:linear-gradient(100deg,#e6b4640a,transparent),var(--surface)}
 .about-hero-copy{background:radial-gradient(ellipse at top left,#e6b46412,transparent 70%),var(--bg)}
 .about-art b{color:var(--accent)}
-
+.nature-photo::after{background:linear-gradient(transparent 65%,#191d19ed)}
 @media(max-width:1000px) and (min-width:601px){.product-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){
  header{padding:0 4%;gap:8px}
@@ -100,15 +100,3 @@ h1,h2{text-transform:uppercase}
 
 /* Home banner: larger editorial copy after removing the two small callouts. */
 .hero-copy>p{font-size:clamp(18px,1.45vw,21px);line-height:1.65;max-width:34rem;margin-bottom:32px}
-
-/* Keep the storefront sign readable instead of forcing a narrow portrait crop. */
-@media(max-width:1100px){
- .hero,.about-hero{grid-template-columns:1fr}
- .hero>.banner-photo,.about-hero .banner-photo{height:auto;aspect-ratio:1179 / 643}
- .banner-photo img{object-position:50% 50%}
- .hero-copy{padding:55px 6%}
- .hero-copy>p{max-width:46rem}
- .about-hero-copy{padding:50px 6%}
- .about-hero-copy>p{max-width:46rem}
-}
-@media(max-width:600px){.hero-copy{padding:43px 6% 35px}}
