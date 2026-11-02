@@ -1,10 +1,10 @@
-# Everday
+# WorkFuel
 
 A responsive concept storefront for customizable, reusable everyday essentials.
 
 ## Development
 
-Requires Node.js 20.19+ or 22.12+. Run `npm ci` then `npm run dev`. If the default npm cache is unavailable in the cloud workspace, use `npm ci --cache /tmp/everday-npm-cache`.
+Use Node.js 24, matching the deployment workflow. Run `npm ci` then `npm run dev`. If the default npm cache is unavailable in the cloud workspace, use `npm ci --cache /tmp/workfuel-npm-cache`.
 
 `npm run build` creates the production output in `dist`; `npm run preview` serves that build. Pages use hash routes (`/#/about` and `/#/products`), so refresh and direct links work on static hosts without server rewrite rules.
 

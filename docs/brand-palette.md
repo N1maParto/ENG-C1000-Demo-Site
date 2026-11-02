@@ -1,24 +1,26 @@
-# Everday: forest palette
+# WorkFuel brand guide
 
-Use these shared colors for the website and presentation slides. CSS tokens live in `src/style.css`.
+**Fuel your day. Protect tomorrow**
+
+The visual direction takes cues from a neighborhood workwear shop: charcoal metal, warm illuminated signage, grounded greens, and simple, practical typography. Mountain photography remains on Home and About; product colors retain sage, forest, oat, and sand.
 
 | Role | Hex | CSS token |
 | --- | --- | --- |
-| Deep forest background | `#101F19` | `--bg` |
-| Forest section background | `#192E24` | `--surface` |
-| Raised moss surface | `#243E30` | `--surface-raised` |
-| Warm ivory primary text | `#F1EFDF` | `--text` |
-| Soft sage secondary text | `#C0CCBC` | `--muted` |
-| Botanical sage accent | `#B9D18B` | `--accent` |
-| Hover accent | `#CEE3A9` | `--accent-hover` |
-| Dark button text | `#14251B` | `--ink` |
-| Muted gold accent / focus ring | `#DBC17D` | `--gold` |
-| Control borders | `#83977F` | `--border` |
+| Charcoal green background | `#191D19` | `--bg` |
+| Dark olive section background | `#242B24` | `--surface` |
+| Raised green surface | `#343C30` | `--surface-raised` |
+| Warm ivory primary text | `#F4EDDC` | `--text` |
+| Warm stone secondary text | `#C9C8B4` | `--muted` |
+| Amber sign light / button fill | `#E6B464` | `--accent` |
+| Light amber hover | `#F1CB86` | `--accent-hover` |
+| Dark button text | `#1B231A` | `--ink` |
+| Warm focus ring | `#E6B464` | `--gold` |
+| Sage control border | `#8B947C` | `--border` |
 
-## Presentation guidance
+## Typography and slides
 
-- Use deep forest as the main slide background, ivory for headings, and soft sage for supporting text. Reserve bright sage and gold for key numbers, diagrams, and short callouts.
-- Use Manrope semibold for headings and DM Sans for body text; Arial is a practical fallback. Aim for 36–48 pt slide titles and at least 24 pt body text. Keep text left-aligned and slides concise.
-- Prefer solid backgrounds behind text. Keep decorative product illustrations separate from body copy. Avoid low-opacity text, busy gradients, and relying on color alone to communicate meaning.
-- Ivory on deep forest has 14.73:1 contrast; secondary text on raised moss has 6.98:1 contrast; dark text on sage buttons has 9.58:1 contrast. These exceed the WCAG AA 4.5:1 normal-text threshold. These are palette measurements, not a full accessibility audit. Check slides on the actual projector, where ambient light can reduce contrast.
-- The website product illustrations retain their original material colors; these are illustration colors, not text/background pairs for slides.
+Use Barlow Condensed bold for headings and the wordmark, and DM Sans for body text. Arial Narrow and Arial are practical fallbacks. All lettering, including product labels, is sans-serif; emphasized headings are upright, not italic.
+
+For slides, use charcoal backgrounds, ivory titles, and stone body text. Reserve amber for short callouts, key figures, and actions. Use at least 24 pt body text and 36–48 pt headings; keep paragraphs short and left aligned. Avoid text over busy photographs. Check the actual projector for legibility and do not rely on color alone to communicate meaning.
+
+The website uses shared CSS tokens in `src/style.css`. Products and illustrations live in `src/products.js`; the four products are Bottle, Lunchbox, Thermos, and Thermos Cleaner. The Bottle's sage finish and steel cup cap/foot complement its side handle. The cleaner has a twisted-wire shaft, dense bristles, and a reusable grip.
