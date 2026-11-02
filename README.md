@@ -25,3 +25,7 @@ If Actions is disabled, enable it in Settings → Actions → General (repositor
 ## Banner photography
 
 Home and About use [Scenic View of Mountains, Pexels photo 13559896](https://www.pexels.com/photo/scenic-view-of-mountains-13559896/). The shared `bannerPhoto` configuration and `naturePhoto()` renderer in `src/main.js` control the source and credits; `.nature-photo` in `src/style.css` controls responsive framing. The image loads directly from `images.pexels.com`, so visitors need access to that domain. It is not bundled locally: the cloud network blocked downloading it during implementation. Both pages use the same photograph, with solid dark panels for readable text.
+
+## Browser zoom and responsive sizing
+
+The page uses a centered, maximum 90rem canvas (`#app`). Fluid headings use container-relative units (`cqw`) rather than viewport units, so desktop content shrinks together when Chrome zooms out instead of expanding to fill the wider CSS viewport. Mobile breakpoints remain responsive. Dialogs retain viewport-fitting limits and a desktop size cap. No JavaScript zoom detection or browser zoom restrictions are applied.
