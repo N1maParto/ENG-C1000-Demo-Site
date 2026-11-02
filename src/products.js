@@ -1,8 +1,8 @@
 export const products = [
- {id:'bottle',name:'Bottle',category:'Water bottles',price:28,color:'Sage',tone:'#a1b49a',type:'bottle',tag:'BESTSELLER',description:'A sturdy, 750 ml insulated bottle with a side handle, protective metal base, and cup-style cap. Built around early starts, packed schedules, and everyday refills.'},
- {id:'lunchbox',name:'Lunchbox',category:'Lunchboxes',price:38,color:'Oat',tone:'#d6c7a6',type:'box',tag:'LUNCH, PACKED BETTER',description:'A classic work-style lunchbox with a rounded lid, carry handle, and metal clasps. Pack your lunch, grab your gear, and get on with the day.'},
- {id:'thermos',name:'Thermos',category:'Thermoses',price:32,color:'Forest',tone:'#45634d',type:'thermos',tag:'HOT OR COLD',description:'A 450 ml insulated thermos with a geometric waist and a broad, cup-style lid. Bring a hot coffee or a cold drink along for the shift.'},
- {id:'cleaner',name:'Thermos Cleaner',category:'Cleaning tools',price:16,color:'Sand',tone:'#b9a77f',type:'cleaner',tag:'KEEP IT GOING',description:'A long-handled cleaning brush with a twisted-wire stem and a rounded bristle head for reaching inside your thermos or bottle. A little care for the gear you use every day.'}
+ {id:'bottle',name:'Bottle',category:'Water bottles',price:25,color:'Sage',tone:'#a1b49a',type:'bottle',tag:'BESTSELLER',description:'A sturdy, 750 ml insulated bottle with a side handle, protective metal base, and cup-style cap. Built around early starts, packed schedules, and everyday refills.'},
+ {id:'lunchbox',name:'Lunchbox',category:'Lunchboxes',price:33,color:'Oat',tone:'#d6c7a6',type:'box',tag:'LUNCH, PACKED BETTER',description:'A classic work-style lunchbox with a rounded lid, carry handle, and metal clasps. Pack your lunch, grab your gear, and get on with the day.'},
+ {id:'thermos',name:'Thermos',category:'Thermoses',price:28,color:'Forest',tone:'#45634d',type:'thermos',tag:'HOT OR COLD',description:'A 450 ml insulated thermos with a geometric waist and a broad, cup-style lid. Bring a hot coffee or a cold drink along for the shift.'},
+ {id:'cleaner',name:'Thermos Cleaner',category:'Cleaning tools',price:14,color:'Sand',tone:'#b9a77f',type:'cleaner',tag:'KEEP IT GOING',description:'A long-handled cleaning brush with a twisted-wire stem and a rounded bristle head for reaching inside your thermos or bottle. A little care for the gear you use every day.'}
 ];
 let artSequence = 0;
 // Each instance has its own paint IDs: hero, catalog and color preview can coexist.
