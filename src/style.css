@@ -108,3 +108,9 @@ h1,h2{text-transform:none}
 /* Home-only photo: keep the full thermos visible and leave About framing alone. */
 .home-photo img{object-position:50% 40%}
 .home-photo::after{content:none}
+
+/* About banner copy is centered after removing its introductory label. */
+.about-hero-copy{display:flex;flex-direction:column;justify-content:center;text-align:center}
+.about-hero-copy>p{margin-inline:auto}
+.about-hero-copy .about-art{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(10px,1.5cqw,24px);align-items:center}
+.about-hero-copy>p em{font-style:italic}
