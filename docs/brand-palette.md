@@ -2,7 +2,7 @@
 
 **Fuel your day. Protect tomorrow**
 
-The visual direction takes cues from a neighborhood workwear shop: charcoal metal, warm tan accents, grounded greens, and simple, practical typography. Mountain photography remains on Home and About; product colors retain sage, forest, oat, and sand.
+The visual direction takes cues from a neighborhood workwear shop: charcoal metal, warm tan accents, grounded greens, and simple, practical typography. Home features the WorkFuel thermos held at a road worksite; About retains mountain photography; product colors retain sage, forest, oat, and sand.
 
 | Role | Hex | CSS token |
 | --- | --- | --- |

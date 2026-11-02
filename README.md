@@ -24,7 +24,9 @@ If Actions is disabled, enable it in Settings → Actions → General (repositor
 
 ## Banner photography
 
-Home and About use [Scenic View of Mountains, Pexels photo 13559896](https://www.pexels.com/photo/scenic-view-of-mountains-13559896/). The shared `bannerPhoto` configuration and `naturePhoto()` renderer in `src/main.js` control the source and credits; `.nature-photo` in `src/style.css` controls responsive framing. The image loads directly from `images.pexels.com`, so visitors need access to that domain. It is not bundled locally: the cloud network blocked downloading it during implementation. Both pages use the same photograph, with solid dark panels for readable text.
+Home uses the uploaded `WorkFuel on the Road Crew.png`, imported by `src/main.js` and bundled into production assets by Vite. Its `.home-photo` modifier controls the crop without changing the About banner. There is no external image-host dependency for Home.
+
+About continues to use [Scenic View of Mountains, Pexels photo 13559896](https://www.pexels.com/photo/scenic-view-of-mountains-13559896/). The `bannerPhoto` configuration and `naturePhoto()` renderer in `src/main.js` control its source and credits. That image loads directly from `images.pexels.com`; the cloud network blocked downloading it during implementation.
 
 ## Browser zoom and responsive sizing
 
