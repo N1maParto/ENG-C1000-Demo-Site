@@ -55,8 +55,8 @@ input::placeholder{color:var(--muted);opacity:1}
 }
 
 /* WorkFuel: charcoal metal, warm sign light, and grounded green surfaces. */
-.logo{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:800;font-size:40px;letter-spacing:-1px;white-space:nowrap}
-.logo span{font:inherit;color:var(--accent);margin-left:0;letter-spacing:inherit}
+.logo{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:40px;letter-spacing:-.8px;white-space:nowrap;color:var(--text)}
+
 header{background:repeating-linear-gradient(90deg,#ffffff03 0 1px,transparent 1px 7px),var(--bg);border-bottom:2px solid var(--border)}
 .announcement{background:var(--accent);color:var(--ink);font-weight:700}
 .announcement span{letter-spacing:1px}

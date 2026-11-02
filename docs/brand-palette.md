@@ -19,7 +19,7 @@ The visual direction takes cues from a neighborhood workwear shop: charcoal meta
 
 ## Typography and slides
 
-Use Barlow Condensed bold for headings and the wordmark, and DM Sans for body text. Arial Narrow and Arial are practical fallbacks. All lettering, including product labels, is sans-serif; emphasized headings are upright, not italic.
+Use Barlow Condensed bold for headings and DM Sans for body text. The WorkFuel wordmark uses bold Arial/Helvetica in one warm ivory color, with mixed-case lettering and close spacing inspired by the product reference. Arial Narrow and Arial are practical fallbacks. All lettering, including product labels, is sans-serif; emphasized headings are upright, not italic.
 
 For slides, use charcoal backgrounds, ivory titles, and stone body text. Reserve amber for short callouts, key figures, and actions. Use at least 24 pt body text and 36–48 pt headings; keep paragraphs short and left aligned. Avoid text over busy photographs. Check the actual projector for legibility and do not rely on color alone to communicate meaning.
 
